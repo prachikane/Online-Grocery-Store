@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FreshCart</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onload="display_items(pantryproducts, 'Shop All')">
+        <div class="header">
+            <a href="main.html"><img src="grocery.jpeg" alt="grocery bag"/><span id="date"></span></a>
+            <h1 style="text-align: center; font-size: 48px; padding:  10px 5px;">FreshCart</h1>
+            <ul>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="myaccount.html">My-account</a></li>
+                <li><a href="about.html">About-us</a></li>
+                <li><a href="contact.html">Contact-us</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="freshproducts.html">Fresh products</a></li>
+                <li><a href="frozen.html">Frozen</a></li>
+                <li><a href="pantry.html">Pantry</a></li>
+                <li><a href="breakfastandcereal.html">Breakfast and Cereal</a></li>
+                <li><a href="baking.html">Baking</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="candy.html">Candy</a></li>
+                <li><a href="specialtyshops.html">Specialty shops</a></li>
+                <li><a href="deals.html">Deals</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="side">
+                <div class="filters">
+                    <h3>Filters</h3>
+                    <p>Sort by Categories</p>
+                    <ul class="categories">
+                        <li><a href="javascript:void(0);" onclick="display_items(pantryproducts,'Shop All')">Shop all</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(pantryproducts,'Canned Goods')">Canned Goods</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(pantryproducts,'Canned Vegetables')">Canned Vegetables</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(pantryproducts,'Condiments')">Condiments</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(pantryproducts,'Peanut Butter and Spread')">Peanut Butter and Spread</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(pantryproducts,'Pasta and Pizza')">Pasta and Pizza</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(pantryproducts,'Rollbacks')">Rollbacks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="maincontent">
+            </div>
+        </div>
+        <div class="footer">
+            <h3><em>Name: Prachi Shekhar Kane &nbsp;&nbsp;&nbsp;NetId: PXK220024 &nbsp;&nbsp;&nbsp;CourseNumber: CS6314.001</em></h3>
+        </div>
+        <script>
+            let categories = ["Shop All", "Canned Goods", "Canned Vegetables", "Condiments", "Peanut Butter and Spread", "Pasta and Pizza", "Rollbacks"]
+            let pantryproducts = [
+                {img : "./pantry/chickennoodlesoup.avif",name : "Chicken Noodle Soup",price : 3.5,category : ["Canned Goods"],count : 5},
+                {img : "./pantry/beans.jpg",name : "Baked Beans",price : 3.4,category : ["Canned Vegetables"],count : 5},
+                {img : "./pantry/risotto.jpg",name : "Risotto",price : 2.3,category : ["Pasta and Pizza"],count : 5},
+                {img : "./pantry/spaghetti.jpg",name : "Spagetti",price : 2.4,category : ["Pasta and Pizza"],count : 5,},
+                {img : "./pantry/chickpea.webp",name : "Chickpea",price : 2.6,category : ["Canned Vegetables"],count : 5},
+                {img : "./pantry/flour.avif",name : "Flour",price : 4.3,category : ["Condiments"],count : 5},
+                {img : "./pantry/nutella.jpg",name : "Nutella",price : 4.3,category : ["Peanut Butter and Spread"],count : 5},
+                {img : "./pantry/peanutbutter.jpg",name : "Peanut Butter",price : 4.5, discount: 1, newPrice:3.5, category : ["Peanut Butter and Spread","Rollbacks"],count : 5},
+                {img : "./pantry/penne.jpg",name : "Penne",price : 1.2,category : ["Pasta and Pizza"],count : 5},
+                {img : "./pantry/noodles.jpg",name : "Noodle Soup",price : 4.5,category : ["Canned Goods"],count : 5},
+                {img : "./pantry/oil.avif",name : "Oil",price : 5.6,category : ["Condiments"],count : 5,},
+                {img : "./pantry/pepper.avif",name : "Pepper",price : 2.5,category : ["Condiments"],count : 5},
+                {img : "./pantry/pizzasauce.avif",name : "Pizza Sauce",price : 5.4,discount: 1, newPrice:4.4, category : ["Pasta and Pizza","Rollbacks"],count : 5},
+                {img : "./pantry/salt.webp",name : "Salt",price : 4.3,category : ["Condiments"],count : 5},
+                {img : "./pantry/sugar.avif",name : "Sugar",price : 3.2, discount: 1, newPrice:2.2, category : ["Condiments","Rollbacks"],count : 5},
+                {img : "./pantry/broth.jpg",name : "Chicken Broth",price : 5.5,category : ["Canned Goods"],count : 5},
+                {img : "./pantry/mixed.jpg",name : "Mixed Jam",price : 5.5,discount: 0.6, newPrice:4.9, category : ["Peanut Butter and Spread","Rollbacks"],count : 5}
+            ]
+        </script>
+        <script src="functions.js"></script>
+    </body>
+</html>

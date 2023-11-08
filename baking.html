@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FreshCart</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onload="display_items(baking, 'Shop All')">
+        <div class="header">
+            <a href="main.html"><img src="grocery.jpeg" alt="grocery bag"/><span id="date"></span></a>
+            <h1 style="text-align: center; font-size: 48px; padding:  10px 5px;">FreshCart</h1>
+            <ul>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="myaccount.html">My-account</a></li>
+                <li><a href="about.html">About-us</a></li>
+                <li><a href="contact.html">Contact-us</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="freshproducts.html">Fresh products</a></li>
+                <li><a href="frozen.html">Frozen</a></li>
+                <li><a href="pantry.html">Pantry</a></li>
+                <li><a href="breakfastandcereal.html">Breakfast and Cereal</a></li>
+                <li><a href="baking.html">Baking</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="candy.html">Candy</a></li>
+                <li><a href="specialtyshops.html">Specialty shops</a></li>
+                <li><a href="deals.html">Deals</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="side">
+                <div class="filters">
+                    <h3>Filters</h3>
+                    <p>Sort by Categories</p>
+                    <ul class="categories">
+                        <li><a href="javascript:void(0);" onclick="display_items(baking,'Shop All')">Shop All</a></li>
+                    </ul>
+                    <input type="text" id="search" name="snackName" placeholder="Enter an item name">
+                    <button type="submit" value="Search" onclick="checkInventory(baking)">Search</button>
+                </div>
+            </div>
+            <div class="maincontent">
+            </div>
+        </div>
+        <div class="footer">
+            <h3><em>Name: Prachi Shekhar Kane &nbsp;&nbsp;&nbsp;NetId: PXK220024 &nbsp;&nbsp;&nbsp;CourseNumber: CS6314.001</em></h3>
+        </div>
+        <script>
+            let baking = [
+                {img : "./baking/apflour.webp",name : "All Purpose Flour",price : 3.5,category : ["Baking"],count : 5},
+                {img : "./baking/bakingpowder.avif",name : "Baking Powder",price : 2.6,category : ["Baking"],count : 5},
+                {img : "./baking/bakingsoda.webp",name : "Baking Soda",price : 4.3,category : ["Baking"],count : 5},
+                {img : "./baking/puddingmix.jpg",name : "Pudding Mix",price : 10,category : ["Baking"],count : 5},
+                {img : "./baking/crusts.jpg",name : "Crusts",price : 7.2,category : ["Baking"],count : 5},
+                {img : "./baking/wheatbran.webp",name : "Wheat Bran",price : 3.2,category : ["Baking"],count : 5},
+                {img : "./baking/bakingmix.jpg",name : "Baking Mix",price : 6.2,category : ["Baking"],count : 5},
+                {img : "./baking/butter.avif",name : "Butter",price : 5.6,category : ["Baking"],count : 5,},
+                {img : "./baking/caketin.webp",name : "Cake Tin",price : 2.5,category : ["Baking"],count : 5,},
+                {img : "./baking/eggs.avif",name : "Eggs",price : 4.3,category : ["Baking"],count : 5,},
+                {img : "./baking/cups.avif",name : "Measuring Cups",price : 1.4,category : ["Baking"],count : 5,},
+                {img : "./baking/pan.jpg",name : "Pan",price : 17.2,category : ["Baking"],count : 5},
+                {img : "./baking/fillings.jpg",name : "Fillings",price : 4.7,category : ["Baking"],count : 5},
+
+        ]
+        </script>
+        <script src="functions.js"></script>
+    </body>
+</html>

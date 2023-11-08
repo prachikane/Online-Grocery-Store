@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FreshCart</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onload="display_items(freshproducts, 'Shop All')">
+        <div class="header">
+            <a href="main.html"><img src="grocery.jpeg" alt="grocery bag"/><span id="date"></span></a>
+            <h1 style="text-align: center; font-size: 48px; padding:  10px 5px;">FreshCart</h1>
+            <ul>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="myaccount.html">My-account</a></li>
+                <li><a href="about.html">About-us</a></li>
+                <li><a href="contact.html">Contact-us</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="freshproducts.html">Fresh products</a></li>
+                <li><a href="frozen.html">Frozen</a></li>
+                <li><a href="pantry.html">Pantry</a></li>
+                <li><a href="breakfastandcereal.html">Breakfast and Cereal</a></li>
+                <li><a href="baking.html">Baking</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="candy.html">Candy</a></li>
+                <li><a href="specialtyshops.html">Specialty shops</a></li>
+                <li><a href="deals.html">Deals</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="side">
+                <div class="filters">
+                    <h3>Filters</h3>
+                    <p>Sort by Categories</p>
+                    <ul class="categories">
+                        <li><a href="javascript:void(0);" onclick="display_items(freshproducts,'Shop All')">Shop all</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(freshproducts,'Vegetables')">Vegetables</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(freshproducts,'Fruits')">Fruits</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(freshproducts,'Pre-Cut Fruits')">Pre-Cut Fruits</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(freshproducts,'Flowers')">Flowers</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(freshproducts,'Salsa and Dips')">Salsa and Dips</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(freshproducts,'Season Produce')">Season Produce</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(freshproducts,'New Items')">New Items</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(freshproducts,'Rollbacks')">Rollbacks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="maincontent">
+            </div>
+        </div>
+        <div class="footer">
+            <h3><em>Name: Prachi Shekhar Kane &nbsp;&nbsp;&nbsp;NetId: PXK220024 &nbsp;&nbsp;&nbsp;CourseNumber: CS6314.001</em></h3>
+        </div>
+        <script>
+            let categories = ["Shop All", "Vegetables", "Fruits", "Pre-Cut Fruits", "Flowers", "Salsa and Dips", "Season Produce", "New Items", "Rollbacks"]
+            let freshproducts = [
+                {img : "./freshproduce/dragonfruit.avif",name : "Dragon Fruit",price : 4.3,category : ["Fruits","Pre-Cut Fruits","Season Produce"],count : 5},
+                {img : "./freshproduce/mangoes.avif",name : "Mangoes",price : 5.6,category : ["Fruits","Season Produce"],count : 5,},
+                {img : "./freshproduce/oranges.webp",name : "Oranges",price : 2.5,category : ["Fruits","Pre-Cut Fruits"],count : 5,},
+                {img : "./freshproduce/jasmines.jpg",name : "Jasmines",price : 4.6,discount: 1, newPrice: 3.6,category : ["Flowers","Rollbacks"],count : 5},
+                {img : "./freshproduce/ketchup.jpg",name : "Ketchup",price : 2.6,category : ["Salsa and Dips"],count : 5,},
+                {img : "./freshproduce/cauliflower.avif",name : "Cauliflower",price : 2.6,category : ["Vegetables"],count : 5},
+                {img : "./freshproduce/papaya.jpg",name : "Papaya",price : 6.7,discount: 2, newPrice: 4.7,category : ["Fruits","Pre-Cut Fruits","Rollbacks"],count : 5},
+                {img : "./freshproduce/pineapples.jpg",name : "Pineapple",price : 7.5,category : ["Fruits","Season Produce"],count : 5,},
+                {img : "./freshproduce/lime.jpg",name : "Lime",price : 1.7,discount: 1, newPrice: 0.7,category : ["Vegetables","Rollbacks"],count : 5},
+                {img : "./freshproduce/lillies.jpg",name : "Lillies",price : 6.7,category : ["Flowers"],count : 5},
+                {img : "./freshproduce/roses.jpg",name : "Roses",price : 8.7,category : ["Flowers","New Items"],count : 5},
+                {img : "./freshproduce/ranch.jpg",name : "Ranch",price : 2.5,category : ["Salsa and Dips"],count : 5,},
+                {img : "./freshproduce/carrots.avif",name : "Carrots",price : 3.5,category : ["Vegetables"],count : 5},
+                {img : "./freshproduce/spinach.avif",name : "Spinach",price : 1.4,category : ["Vegetables"],count : 5,},
+                {img : "./freshproduce/strawberry.avif",name : "Strawberries",price : 4.3,category : ["Fruits"],count : 5,},
+                {img : "./freshproduce/tomatoes.avif",name : "Tomatoes",price : 4.2,discount: 2.0, newPrice: 2.2,category : ["Vegetables","Rollbacks"],count : 5},
+                {img : "./freshproduce/orchids.jpg",name : "Orchids",price : 11.4,category : ["Flowers","New Items"],count : 5,},
+                {img : "./freshproduce/tartar.jpg",name : "Tartar",price : 4.3,category : ["Salsa and Dips"],count : 5,},
+                {img : "./freshproduce/kiwi.jpg",name : "Kiwi",price : 13.5,discount: 2, newPrice: 11.5,category : ["Pre-Cut Fruits", "Rollbacks"],count : 5},
+                {img : "./freshproduce/avocado.jpg",name : "Avocado",price : 5.6,category : ["Salsa and Dips"],count : 5},
+
+            ]
+        </script>
+        <script src="functions.js"></script>
+    </body>
+</html>

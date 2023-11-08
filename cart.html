@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FreshCart</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <a href="main.html"><img src="grocery.jpeg" alt="grocery bag"/><span id="date"></span></a>
+            <h1 style="text-align: center; font-size: 48px; padding:  10px 5px;">FreshCart</h1>
+            <ul>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="myaccount.html">My-account</a></li>
+                <li><a href="about.html">About-us</a></li>
+                <li><a href="contact.html">Contact-us</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="freshproducts.html">Fresh products</a></li>
+                <li><a href="frozen.html">Frozen</a></li>
+                <li><a href="pantry.html">Pantry</a></li>
+                <li><a href="breakfastandcereal.html">Breakfast and Cereal</a></li>
+                <li><a href="baking.html">Baking</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="candy.html">Candy</a></li>
+                <li><a href="specialtyshops.html">Specialty shops</a></li>
+                <li><a href="deals.html">Deals</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="maincontent">
+                
+            </div>
+        </div>
+        <div class="footer">
+            <h3><em>Name: Prachi Shekhar Kane &nbsp;&nbsp;&nbsp;NetId: PXK220024 &nbsp;&nbsp;&nbsp;CourseNumber: CS6314.001</em></h3>
+        </div>
+        <script>
+            // Function to display the cart contents from session storage
+            function displayCart() {
+                var cart = JSON.parse(sessionStorage.getItem('cart'));
+                var cartContents = document.getElementsByClassName('maincontent')[0];
+                var cartHTML = '<section class="container">';
+                if (cart && cart.length > 0) {
+                    var totalPrice = 0;
+                    cart.forEach(item => {
+                        var itemTotal = item.price * item.quantity;
+                        totalPrice += itemTotal;
+                        cartHTML += `
+                            <div class="card">
+                            <img src="${item.img}" alt="${item.name}">
+                            <h3>${item.name}</h3>
+                            <p >$${item.price.toFixed(2)} ` + 'x' + ` ${item.quantity}` + ` = $` + ` ${itemTotal.toFixed(2)}</p>
+                            </div>
+                        `
+                    });
+                    cartHTML += '</section>';
+                    cartHTML += '<h2>Total Price: $' + totalPrice.toFixed(2) + '</h2>';
+                    cartHTML += '<button class="card" style="background-color: #31494c;" type="submit" onclick ="clearcart()" >Clear Cart</button>';
+                    cartHTML += '<button class="card" style="background-color: #31494c;" type="submit" onclick ="checkout()" >Checkout</button>'
+                    cartContents.innerHTML = cartHTML;
+                } else
+                {
+                    cartContents.innerHTML = '<p>Your cart is empty.</p>';
+                }
+            }
+            window.onload = displayCart;
+            function clearcart(){
+                sessionStorage.clear();
+                displayCart();
+            }
+            function checkout(){
+                sessionStorage.clear();
+                alert("Thank you for shopping!!")
+                window.location.href = "./freshproducts.html";
+            }
+        </script>
+        <script src="functions.js"></script>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FreshCart</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onload="display_items(frozenproducts, 'Shop All')">
+        <div class="header">
+            <a href="main.html"><img src="grocery.jpeg" alt="grocery bag"/><span id="date"></span></a>
+            <h1 style="text-align: center; font-size: 48px; padding:  10px 5px;">FreshCart</h1>
+            <ul>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="myaccount.html">My-account</a></li>
+                <li><a href="about.html">About-us</a></li>
+                <li><a href="contact.html">Contact-us</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="freshproducts.html">Fresh products</a></li>
+                <li><a href="frozen.html">Frozen</a></li>
+                <li><a href="pantry.html">Pantry</a></li>
+                <li><a href="breakfastandcereal.html">Breakfast and Cereal</a></li>
+                <li><a href="baking.html">Baking</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="candy.html">Candy</a></li>
+                <li><a href="specialtyshops.html">Specialty shops</a></li>
+                <li><a href="deals.html">Deals</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="side">
+                <div class="filters">
+                    <h3>Filters</h3>
+                    <p>Sort by Categories</p>
+                    <ul class="categories">
+                        <li><a href="javascript:void(0);" onclick="display_items(frozenproducts,'Shop All')">Shop all</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(frozenproducts,'Frozen Breakfast')">Frozen Breakfast</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(frozenproducts,'Frozen Dessert')">Frozen Dessert</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(frozenproducts,'Frozen Meal')">Frozen Meal</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(frozenproducts,'Frozen Pizza')">Frozen Pizza</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(frozenproducts,'Frozen Meat')">Frozen Meat</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(frozenproducts,'Frozen Snacks')">Frozen Snacks</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(frozenproducts,'Rollbacks')">Rollbacks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="maincontent">
+            </div>
+        </div>
+        <div class="footer">
+            <h3><em>Name: Prachi Shekhar Kane &nbsp;&nbsp;&nbsp;NetId: PXK220024 &nbsp;&nbsp;&nbsp;CourseNumber: CS6314.001</em></h3>
+        </div>
+        <script>
+            let frozenproducts = [
+                {img : "./frozenfoods/pepperoni.jpg",name : "Pepporni Pizza",price : 13.2,discount: 2, newPrice: 11.2, category : ["Frozen Pizza","Rollbacks"],count : 5},
+                {img : "./frozenfoods/berries.avif",name : "Berries",price : 3.5,category : ["Frozen Snacks"],count : 5},
+                {img : "./frozenfoods/dumplings.jpeg",name : "Dumpling",price : 7.6,category : ["Frozen Meal"],count : 5},
+                {img : "./frozenfoods/pizzas.jpeg",name : "Pizza",price : 13.2,category : ["Frozen Pizza"],count : 5},
+                {img : "./frozenfoods/chicken.jpeg",name : "Chicken",price : 15.6,category : ["Frozen Meat"],count : 5,},
+                {img : "./frozenfoods/nuggets.jpg",name : "Chicken Nuggets",price : 14.3,category : ["Frozen Meat"],count : 5},
+                {img : "./frozenfoods/icecream.jpeg",name : "Ice Cream",price : 15.6,category : ["Frozen Dessert"],count : 5,},
+                {img : "./frozenfoods/meat.jpeg",name : "Meat",price : 22.5,discount: 4, newPrice: 18.5,category : ["Frozen Meat","Rollbacks"],count : 5,},
+                {img : "./frozenfoods/lasagna.jpg",name : "Lasagna",price : 22.5,category : ["Frozen Meal"],count : 5,},
+                {img : "./frozenfoods/momos.jpg",name : "Momos",price : 12.4,discount: 5, newPrice: 7.4,category : ["Frozen Meal","Rollbacks"],count : 5,},
+                {img : "./frozenfoods/pasta.jpg",name : "Pasta",price : 3.3,category : ["Frozen Meal"],count : 5,},
+                {img : "./frozenfoods/mixveggies.jpeg",name : "Mix Vegetables",price : 2.4,category : ["Frozen Meal"],count : 5,},
+                {img : "./frozenfoods/peas.jpeg",name : "Peas",price : 2.3,category : ["Frozen Snacks"],count : 5,},
+                {img : "./frozenfoods/mac&cheese.jpg",name : "Mac and Cheese",price : 2.4,category : ["Frozen Breakfast"],count : 5,},
+                {img : "./frozenfoods/muffin.jpg",name : "Muffin",price : 2.3,category : ["Frozen Breakfast"],count : 5,},
+            ]
+        </script>
+        <script src="functions.js"></script>
+    </body>
+</html>

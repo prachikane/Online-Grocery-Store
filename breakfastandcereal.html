@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FreshCart</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onload="display_items(bncproducts, 'Shop All')">
+        <div class="header">
+            <a href="main.html"><img src="grocery.jpeg" alt="grocery bag"/><span id="date"></span></a>
+            <h1 style="text-align: center; font-size: 48px; padding:  10px 5px;">FreshCart</h1>
+            <ul>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="myaccount.html">My-account</a></li>
+                <li><a href="about.html">About-us</a></li>
+                <li><a href="contact.html">Contact-us</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="freshproducts.html">Fresh products</a></li>
+                <li><a href="frozen.html">Frozen</a></li>
+                <li><a href="pantry.html">Pantry</a></li>
+                <li><a href="breakfastandcereal.html">Breakfast and Cereal</a></li>
+                <li><a href="baking.html">Baking</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="candy.html">Candy</a></li>
+                <li><a href="specialtyshops.html">Specialty shops</a></li>
+                <li><a href="deals.html">Deals</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="side">
+                <div class="filters">
+                    <h3>Filters</h3>
+                    <p>Sort by Categories</p>
+                    <ul class="categories">
+                        <li><a href="javascript:void(0);" onclick="display_items(bncproducts,'Shop All')">Shop all</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(bncproducts,'The Cereal Shop')">The Cereal Shop</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(bncproducts,'Pan Cakes and Waffles')">Pan Cakes and Waffles</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(bncproducts,'Breakfast Breads')">Breakfast Breads</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(bncproducts,'Oat Meal and Grits')">Oat Meal and Grits</a></li>
+                        <li><a href="javascript:void(0);" onclick="display_items(bncproducts,'Rollbacks')">Rollbacks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="maincontent">
+            </div>
+        </div>
+        <div class="footer">
+            <h3><em>Name: Prachi Shekhar Kane &nbsp;&nbsp;&nbsp;NetId: PXK220024 &nbsp;&nbsp;&nbsp;CourseNumber: CS6314.001</em></h3>
+        </div>
+        <script>
+            let categories = ["Shop All", "The Cereal Shop", "Pan Cakes and Waffles", "Breakfast Breads", "Oat Meal and Grits","Rollbacks"]
+            let bncproducts = [
+                {img : "./breakfast/chocos.webp",name : "Chocos",price : 3.5,category : ["The Cereal Shop"],count : 5},
+                {img : "./breakfast/cinamoncrunch.avif",name : "Cinamon Crunch",price : 2.6,category : ["The Cereal Shop"],count : 5},
+                {img : "./breakfast/cornflakes.avif",name : "Cornflakes",price : 4.3,category : ["The Cereal Shop"],count : 5},
+                {img : "./breakfast/muesli.avif",name : "Muesli",price : 5.6,category : ["The Cereal Shop"],count : 5,},
+                {img : "./breakfast/oats.avif",name : "Oats",price : 2.5,category : ["Oat Meal and Grits"],count : 5,},
+                {img : "./breakfast/pancakes.avif",name : "Pancakes",price : 1.4,category : ["Pan Cakes and Waffles"],count : 5,},
+                {img : "./breakfast/smoothie.avif",name : "Smoothie", price : 4.3, discount: 2, newPrice: 2.3 ,category : ["Rollbacks"],count : 5,},
+                {img : "./breakfast/waffle.avif",name : "Waffles",price : 3.2,category : ["Pan Cakes and Waffles"],count : 5},
+                {img : "./breakfast/applejacks.jpg",name : "Apple Jacks",price : 3.2,category : ["The Cereal Shop"],count : 5},
+                {img : "./breakfast/buttermilk.jpg",name : "Buttermilk Waffles",price : 5.2,category : ["Pan Cakes and Waffles"],count : 5},
+                {img : "./breakfast/cocoapuffs.jpg",name : "Cocoa Puffs",price : 5.6,category : ["The Cereal Shop"],count : 5,},
+                {img : "./breakfast/croissant.jpg",name : "Croissant",price : 3.5,category : ["Breakfast Breads"],count : 5,},
+                {img : "./breakfast/donut.jpg",name : "Donut",price : 2.4,category : ["Breakfast Breads"],count : 5,},
+                {img : "./breakfast/frootloops.jpg",name : "Frootloops",price : 3.5,category : ["The Cereal Shop"],count : 5,},
+                {img : "./breakfast/Honey.jpg",name : "Honey Wheat Bread",price : 3.5,discount: 1.5, newPrice: 2 ,category : ["Breakfast Breads","Rollbacks"],count : 5,},
+                {img : "./breakfast/pioneer.jpg",name : "Pionner",price : 5.5,category : ["Pan Cakes and Waffles"],count : 5,},
+                {img : "./breakfast/quaker.jpg",name : "Quaker",price : 6.5,category : ["Oat Meal and Grits"],count : 5,},
+                {img : "./breakfast/wheat.jpg",name : "Wheat Bread",price : 3.5,discount: 0.4, newPrice: 3.1 ,category : ["Breakfast Breads","Rollbacks"],count : 5,},
+
+            ]
+        </script>
+        <script src="functions.js"></script>
+    </body>
+</html>
