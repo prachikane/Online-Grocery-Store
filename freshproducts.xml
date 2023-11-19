@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <product>
+        <img>./freshproduce/dragonfruit.avif</img>
+        <name>Dragon Fruit</name>
+        <price>4.3</price>
+        <category>Fruits</category>
+        <category>Pre-Cut Fruits</category>
+        <category>Season Produce</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/mangoes.avif</img>
+        <name>Mangoes</name>
+        <price>5.6</price>
+        <category>Fruits</category>
+        <category>Season Produce</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/oranges.webp</img>
+        <name>Oranges</name>
+        <price>2.5</price>
+        <category>Fruits</category>
+        <category>Pre-Cut Fruits</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/jasmines.jpg</img>
+        <name>Jasmines</name>
+        <price>4.6</price>
+        <discount>1</discount>
+        <newPrice>3.6</newPrice>
+        <category>Flowers</category>
+        <category>Rollbacks</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/ketchup.jpg</img>
+        <name>Ketchup</name>
+        <price>2.6</price>
+        <category>Salsa and Dips</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/cauliflower.avif</img>
+        <name>Cauliflower</name>
+        <price>2.6</price>
+        <category>Vegetables</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/papaya.jpg</img>
+        <name>Papaya</name>
+        <price>6.7</price>
+        <discount>2</discount>
+        <newPrice>4.7</newPrice>
+        <category>Fruits</category>
+        <category>Pre-Cut Fruits</category>
+        <category>Rollbacks</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/pineapples.jpg</img>
+        <name>Pineapple</name>
+        <price>7.5</price>
+        <category>Fruits</category>
+        <category>Season Produce</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/lime.jpg</img>
+        <name>Lime</name>
+        <price>1.7</price>
+        <discount>1</discount>
+        <newPrice>0.7</newPrice>
+        <category>Vegetables</category>
+        <category>Rollbacks</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/lillies.jpg</img>
+        <name>Lillies</name>
+        <price>6.7</price>
+        <category>Flowers</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/roses.jpg</img>
+        <name>Roses</name>
+        <price>8.7</price>
+        <category>Flowers</category>
+        <category>New Items</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/ranch.jpg</img>
+        <name>Ranch</name>
+        <price>2.5</price>
+        <category>Salsa and Dips</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/carrots.avif</img>
+        <name>Carrots</name>
+        <price>3.5</price>
+        <category>Vegetables</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/spinach.avif</img>
+        <name>Spinach</name>
+        <price>1.4</price>
+        <category>Vegetables</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/strawberry.avif</img>
+        <name>Strawberries</name>
+        <price>4.3</price>
+        <category>Fruits</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/tomatoes.avif</img>
+        <name>Tomatoes</name>
+        <price>4.2</price>
+        <discount>2.0</discount>
+        <newPrice>2.2</newPrice>
+        <category>Vegetables</category>
+        <category>Rollbacks</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/orchids.jpg</img>
+        <name>Orchids</name>
+        <price>11.4</price>
+        <category>Flowers</category>
+        <category>New Items</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/tartar.jpg</img>
+        <name>Tartar</name>
+        <price>4.3</price>
+        <category>Salsa and Dips</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/kiwi.jpg</img>
+        <name>Kiwi</name>
+        <price>13.5</price>
+        <discount>2</discount>
+        <newPrice>11.5</newPrice>
+        <category>Pre-Cut Fruits</category>
+        <category>Rollbacks</category>
+        <count>5</count>
+    </product>
+    <product>
+        <img>./freshproduce/avocado.jpg</img>
+        <name>Avocado</name>
+        <price>5.6</price>
+        <category>Salsa and Dips</category>
+        <count>5</count>
+    </product>
+</products>

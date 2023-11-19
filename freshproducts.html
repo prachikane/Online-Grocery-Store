@@ -3,8 +3,175 @@
     <head>
         <title>FreshCart</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body onload="display_items(freshproducts, 'Shop All')">
+        <script id="freshproducts" type="text/xml">
+            <products>
+                <product>
+                    <img>./freshproduce/dragonfruit.avif</img>
+                    <name>Dragon Fruit</name>
+                    <price>4.3</price>
+                    <category>Fruits</category>
+                    <category>Pre-Cut Fruits</category>
+                    <category>Season Produce</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/mangoes.avif</img>
+                    <name>Mangoes</name>
+                    <price>5.6</price>
+                    <category>Fruits</category>
+                    <category>Season Produce</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/oranges.webp</img>
+                    <name>Oranges</name>
+                    <price>2.5</price>
+                    <category>Fruits</category>
+                    <category>Pre-Cut Fruits</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/jasmines.jpg</img>
+                    <name>Jasmines</name>
+                    <price>4.6</price>
+                    <discount>1</discount>
+                    <newPrice>3.6</newPrice>
+                    <category>Flowers</category>
+                    <category>Rollbacks</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/ketchup.jpg</img>
+                    <name>Ketchup</name>
+                    <price>2.6</price>
+                    <category>Salsa and Dips</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/cauliflower.avif</img>
+                    <name>Cauliflower</name>
+                    <price>2.6</price>
+                    <category>Vegetables</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/papaya.jpg</img>
+                    <name>Papaya</name>
+                    <price>6.7</price>
+                    <discount>2</discount>
+                    <newPrice>4.7</newPrice>
+                    <category>Fruits</category>
+                    <category>Pre-Cut Fruits</category>
+                    <category>Rollbacks</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/pineapples.jpg</img>
+                    <name>Pineapple</name>
+                    <price>7.5</price>
+                    <category>Fruits</category>
+                    <category>Season Produce</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/lime.jpg</img>
+                    <name>Lime</name>
+                    <price>1.7</price>
+                    <discount>1</discount>
+                    <newPrice>0.7</newPrice>
+                    <category>Vegetables</category>
+                    <category>Rollbacks</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/lillies.jpg</img>
+                    <name>Lillies</name>
+                    <price>6.7</price>
+                    <category>Flowers</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/roses.jpg</img>
+                    <name>Roses</name>
+                    <price>8.7</price>
+                    <category>Flowers</category>
+                    <category>New Items</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/ranch.jpg</img>
+                    <name>Ranch</name>
+                    <price>2.5</price>
+                    <category>Salsa and Dips</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/carrots.avif</img>
+                    <name>Carrots</name>
+                    <price>3.5</price>
+                    <category>Vegetables</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/spinach.avif</img>
+                    <name>Spinach</name>
+                    <price>1.4</price>
+                    <category>Vegetables</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/strawberry.avif</img>
+                    <name>Strawberries</name>
+                    <price>4.3</price>
+                    <category>Fruits</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/tomatoes.avif</img>
+                    <name>Tomatoes</name>
+                    <price>4.2</price>
+                    <discount>2.0</discount>
+                    <newPrice>2.2</newPrice>
+                    <category>Vegetables</category>
+                    <category>Rollbacks</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/orchids.jpg</img>
+                    <name>Orchids</name>
+                    <price>11.4</price>
+                    <category>Flowers</category>
+                    <category>New Items</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/tartar.jpg</img>
+                    <name>Tartar</name>
+                    <price>4.3</price>
+                    <category>Salsa and Dips</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/kiwi.jpg</img>
+                    <name>Kiwi</name>
+                    <price>13.5</price>
+                    <discount>2</discount>
+                    <newPrice>11.5</newPrice>
+                    <category>Pre-Cut Fruits</category>
+                    <category>Rollbacks</category>
+                    <count>5</count>
+                </product>
+                <product>
+                    <img>./freshproduce/avocado.jpg</img>
+                    <name>Avocado</name>
+                    <price>5.6</price>
+                    <category>Salsa and Dips</category>
+                    <count>5</count>
+                </product>
+            </products>
+        </script>
+        </head>
+    <body onload="display_items(freshproducts,'Shop All')">
         <div class="header">
             <a href="main.html"><img src="grocery.jpeg" alt="grocery bag"/><span id="date"></span></a>
             <h1 style="text-align: center; font-size: 48px; padding:  10px 5px;">FreshCart</h1>
@@ -52,32 +219,151 @@
         <div class="footer">
             <h3><em>Name: Prachi Shekhar Kane &nbsp;&nbsp;&nbsp;NetId: PXK220024 &nbsp;&nbsp;&nbsp;CourseNumber: CS6314.001</em></h3>
         </div>
-        <script>
-            let categories = ["Shop All", "Vegetables", "Fruits", "Pre-Cut Fruits", "Flowers", "Salsa and Dips", "Season Produce", "New Items", "Rollbacks"]
-            let freshproducts = [
-                {img : "./freshproduce/dragonfruit.avif",name : "Dragon Fruit",price : 4.3,category : ["Fruits","Pre-Cut Fruits","Season Produce"],count : 5},
-                {img : "./freshproduce/mangoes.avif",name : "Mangoes",price : 5.6,category : ["Fruits","Season Produce"],count : 5,},
-                {img : "./freshproduce/oranges.webp",name : "Oranges",price : 2.5,category : ["Fruits","Pre-Cut Fruits"],count : 5,},
-                {img : "./freshproduce/jasmines.jpg",name : "Jasmines",price : 4.6,discount: 1, newPrice: 3.6,category : ["Flowers","Rollbacks"],count : 5},
-                {img : "./freshproduce/ketchup.jpg",name : "Ketchup",price : 2.6,category : ["Salsa and Dips"],count : 5,},
-                {img : "./freshproduce/cauliflower.avif",name : "Cauliflower",price : 2.6,category : ["Vegetables"],count : 5},
-                {img : "./freshproduce/papaya.jpg",name : "Papaya",price : 6.7,discount: 2, newPrice: 4.7,category : ["Fruits","Pre-Cut Fruits","Rollbacks"],count : 5},
-                {img : "./freshproduce/pineapples.jpg",name : "Pineapple",price : 7.5,category : ["Fruits","Season Produce"],count : 5,},
-                {img : "./freshproduce/lime.jpg",name : "Lime",price : 1.7,discount: 1, newPrice: 0.7,category : ["Vegetables","Rollbacks"],count : 5},
-                {img : "./freshproduce/lillies.jpg",name : "Lillies",price : 6.7,category : ["Flowers"],count : 5},
-                {img : "./freshproduce/roses.jpg",name : "Roses",price : 8.7,category : ["Flowers","New Items"],count : 5},
-                {img : "./freshproduce/ranch.jpg",name : "Ranch",price : 2.5,category : ["Salsa and Dips"],count : 5,},
-                {img : "./freshproduce/carrots.avif",name : "Carrots",price : 3.5,category : ["Vegetables"],count : 5},
-                {img : "./freshproduce/spinach.avif",name : "Spinach",price : 1.4,category : ["Vegetables"],count : 5,},
-                {img : "./freshproduce/strawberry.avif",name : "Strawberries",price : 4.3,category : ["Fruits"],count : 5,},
-                {img : "./freshproduce/tomatoes.avif",name : "Tomatoes",price : 4.2,discount: 2.0, newPrice: 2.2,category : ["Vegetables","Rollbacks"],count : 5},
-                {img : "./freshproduce/orchids.jpg",name : "Orchids",price : 11.4,category : ["Flowers","New Items"],count : 5,},
-                {img : "./freshproduce/tartar.jpg",name : "Tartar",price : 4.3,category : ["Salsa and Dips"],count : 5,},
-                {img : "./freshproduce/kiwi.jpg",name : "Kiwi",price : 13.5,discount: 2, newPrice: 11.5,category : ["Pre-Cut Fruits", "Rollbacks"],count : 5},
-                {img : "./freshproduce/avocado.jpg",name : "Avocado",price : 5.6,category : ["Salsa and Dips"],count : 5},
-
-            ]
-        </script>
         <script src="functions.js"></script>
+        <script>
+            var item_lists = [];
+            var productobj;
+            var freshproducts = document.getElementById('freshproducts').textContent;
+            function display_items(items, category){
+                productobj = convertXmlToJsArray(items);
+                console.log(productobj);
+                if(category == 'Shop All'){
+                    item_lists = productobj;
+                }
+                else{
+                    item_lists = productobj.filter(function (item){
+                        return  item.category.includes(category);
+                    });
+                }
+                console.log(item_lists);
+                var item_html = '<section class="container">';
+                if(category.includes("Rollbacks"))
+                {
+                    item_lists.forEach(item => {
+                        item_html += `
+                            <div class="card">
+                                <img src="${item.img}" alt="${item.name}">
+                                <h3>${item.name}</h3>
+                                <p class="discount">$${item.newPrice.toFixed(2)} <br> <span class="offer">($${item.price.toFixed(2)} - ${item.discount.toFixed(2)}$ Off)</span></p>
+                                <br>
+                                <div class="qtyTextBox">
+                                    <button type="submit" value="Add to Cart" onclick="addToCart('${item.name}',${item.newPrice},parseInt(document.getElementById('${item.name.toLowerCase()}Qty').value))">Add to Cart</button>
+                                    <input id="${item.name.toLowerCase()}Qty" type="text" placeholder="Quantity"/>
+                                </div>
+                            </div>
+                        `;
+                    });
+                }
+                else
+                {
+                    item_lists.forEach(item => {
+                        item_html += `
+                            <div class="card">
+                                <img src="${item.img}" alt="${item.name}">
+                                <h3>${item.name}</h3>
+                                <p>$${item.price.toFixed(2)}</p>
+                                <br>
+                                <div class="qtyTextBox">
+                                    <button type="submit" value="Add to Cart" onclick="addToCart('${item.name}',${item.price},parseInt(document.getElementById('${item.name.toLowerCase()}Qty').value))">Add to Cart</button>
+                                    <input id="${item.name.toLowerCase()}Qty" type="text" placeholder="Quantity"/>
+                                </div>
+                            </div>
+                        `;
+                    });            
+                }
+                item_html+='</section>';
+                document.getElementsByClassName('maincontent')[0].innerHTML = item_html;
+            }
+
+            function convertXmlToJsArray(items) {
+                const parser = new DOMParser();
+                const products = parser.parseFromString(items,"text/xml");
+                console.log(products);
+                var itemxml = products.querySelectorAll('product');
+                console.log(itemxml);
+                const jsArray = Array.from(itemxml).map(product => {
+                    productobj = {
+                        img: product.querySelector('img').textContent,
+                        name: product.querySelector('name').textContent,
+                        price: parseFloat(product.querySelector('price').textContent),
+                        category: Array.from(product.querySelectorAll('category')).map(categoryElement => categoryElement.textContent),
+                        count: parseInt(product.querySelector('count').textContent)
+                    };
+                    if (product.querySelector('discount')) {
+                        productobj.discount = parseFloat(product.querySelector('discount').textContent);
+                    }
+                    if (product.querySelector('newPrice')) {
+                        productobj.newPrice = parseFloat(product.querySelector('newPrice').textContent);
+                    }
+                    return productobj;
+                });
+                return jsArray;
+            }
+        </script>
+        <script>
+            /*var freshproducts = "<products>"+
+            "<product>"+
+                "<img>./freshproduce/dragonfruit.avif</img>"+"<name>Dragon Fruit</name>"+"<price>4.3</price>"+"<category>Fruits</category>"+"<category>Pre-Cut Fruits</category>"+"<category>Season Produce</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/mangoes.avif</img>"+"<name>Mangoes</name>"+"<price>5.6</price>"+"<category>Fruits</category>"+"<category>Season Produce</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/oranges.webp</img>"+"<name>Oranges</name>"+"<price>2.5</price>"+"<category>Fruits</category>"+"<category>Pre-Cut Fruits</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/jasmines.jpg</img>"+"<name>Jasmines</name>"+"<price>4.6</price>"+"<discount>1</discount>"+"<newPrice>3.6</newPrice>"+"<category>Flowers</category>"+"<category>Rollbacks</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/ketchup.jpg</img>"+"<name>Ketchup</name>"+"<price>2.6</price>"+"<category>Salsa and Dips</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/cauliflower.avif</img>"+"<name>Cauliflower</name>"+"<price>2.6</price>"+"<category>Vegetables</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/papaya.jpg</img>"+"<name>Papaya</name>"+"<price>6.7</price>"+"<discount>2</discount>"+"<newPrice>4.7</newPrice>"+"<category>Fruits</category>"+"<category>Pre-Cut Fruits</category>"+"<category>Rollbacks</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/pineapples.jpg</img>"+"<name>Pineapple</name>"+"<price>7.5</price>"+"<category>Fruits</category>"+"<category>Season Produce</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/lime.jpg</img>"+"<name>Lime</name>"+"<price>1.7</price>"+"<discount>1</discount>"+"<newPrice>0.7</newPrice>"+"<category>Vegetables</category>"+"<category>Rollbacks</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/lillies.jpg</img>"+"<name>Lillies</name>"+"<price>6.7</price>"+"<category>Flowers</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/roses.jpg</img>"+"<name>Roses</name>"+"<price>8.7</price>"+"<category>Flowers</category>"+"<category>New Items</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/ranch.jpg</img>"+"<name>Ranch</name>"+"<price>2.5</price>"+"<category>Salsa and Dips</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/carrots.avif</img>"+"<name>Carrots</name>"+"<price>3.5</price>"+"<category>Vegetables</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/spinach.avif</img>"+"<name>Spinach</name>"+"<price>1.4</price>"+"<category>Vegetables</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/strawberry.avif</img>"+"<name>Strawberries</name>"+"<price>4.3</price>"+"<category>Fruits</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/tomatoes.avif</img>"+"<name>Tomatoes</name>"+"<price>4.2</price>"+"<discount>2.0</discount>"+"<newPrice>2.2</newPrice>"+"<category>Vegetables</category>"+"<category>Rollbacks</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/orchids.jpg</img>"+"<name>Orchids</name>"+"<price>11.4</price>"+"<category>Flowers</category>"+"<category>New Items</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/tartar.jpg</img>"+"<name>Tartar</name>"+"<price>4.3</price>"+"<category>Salsa and Dips</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/kiwi.jpg</img>"+"<name>Kiwi</name>"+"<price>13.5</price>"+"<discount>2</discount>"+"<newPrice>11.5</newPrice>"+"<category>Pre-Cut Fruits</category>"+"<category>Rollbacks</category>"+"<count>5</count>"+
+            "</product>"+
+            "<product>"+
+                "<img>./freshproduce/avocado.jpg</img>"+"<name>Avocado</name>"+"<price>5.6</price>"+"<category>Salsa and Dips</category>"+"<count>5</count>"+
+            "</product>"+
+        "</products>";*/
+        </script>
     </body>
 </html>
+
